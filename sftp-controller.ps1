@@ -16,4 +16,4 @@ $storageAccount.UpdateProperties.sftpEnabled = $EnableSftp
 # Apply the update
 $storageAccount | Set-AzStorageAccount
 
-Update-AzStorageAccount -ResourceGroupName $ResourceGroupName -Name $StorageAccountName -EnableSftp $EnableSftp
+#Update-AzStorageAccount -ResourceGroupName $ResourceGroupName -Name $StorageAccountName -EnableSftp $EnableSftp
