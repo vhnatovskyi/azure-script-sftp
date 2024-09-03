@@ -7,4 +7,5 @@ param(
 # Import the Az.Storage module
 Import-Module Az.Storage
 
-Update-AzStorageAccount -ResourceGroupName $ResourceGroupName -Name $StorageAccountName -EnableSftp $EnableSftp
+# Set the SFTP setting on the storage account
+Set-AzStorageAccount -ResourceGroupName $ResourceGroupName -Name $StorageAccountName -EnableSftp $EnableSftp
