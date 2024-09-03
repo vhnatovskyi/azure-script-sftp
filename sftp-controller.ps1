@@ -17,7 +17,7 @@ if ($storageAccount) {
     $storageAccount.EnableSftp = $false
 
     # Оновлення налаштувань облікового запису
-    Set-AzStorageAccount -ResourceGroupName $ResourceGroupName -Name $StorageAccountName -EnableSftp $EnableSftp
+    Set-AzStorageAccount -ResourceGroupName $ResourceGroupName -Name $StorageAccountName -EnableSftp $EnableSftp -DisableLocalUsers $DisableLocalUsers
     
     Write-Output "SFTP successfully updated for $StorageAccountName to $EnableSftp."
 } else {
