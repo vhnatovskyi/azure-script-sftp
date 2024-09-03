@@ -11,7 +11,7 @@ $storageAccount = Get-AzStorageAccount -ResourceGroupName $ResourceGroupName -Na
 if ($storageAccount) {
     $storageAccount.EnableSftp = $false
 
-    Set-AzStorageAccount -ResourceGroupName $ResourceGroupName -Name $StorageAccountName -EnableSftp $EnableSftp -DisableLocalUsers $EnableSftp
+    Set-AzStorageAccount -ResourceGroupName $ResourceGroupName -Name $StorageAccountName -EnableSftp $EnableSftp ##-DisableLocalUsers $EnableSftp
     
     Write-Output "SFTP successfully updated for $StorageAccountName to $EnableSftp."
 } else {
