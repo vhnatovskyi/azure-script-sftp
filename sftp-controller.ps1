@@ -14,7 +14,6 @@ Connect-AzAccount -Identity
 $storageAccount = Get-AzStorageAccount -ResourceGroupName $ResourceGroupName -Name $StorageAccountName
 
 if ($storageAccount) {
-    $storageAccount.SkuName = "Standard_LRS"  # Або інший тип, який вам потрібен
     $storageAccount.EnableSftp = $false
 
     # Оновлення налаштувань облікового запису
